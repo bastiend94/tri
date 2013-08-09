@@ -1,4 +1,4 @@
-# Usage : tri_bulle.py 9 4 7 8 [...]
+# Usage : tri_bulle.py 9 4 7 8 5 [...]
 import sys
 
 liste = []
