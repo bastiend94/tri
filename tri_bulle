@@ -1,0 +1,28 @@
+# Usage : tri_bulle.py 9 4 7 8 [...]
+import sys
+
+liste = []
+
+i = 1
+while i < len(sys.argv):
+  liste.append(int(sys.argv[i]))
+	i += 1
+
+done = False
+taille = len(liste)
+	
+print "Liste de depart :",liste
+
+while(done == False):
+	done = True
+	i = 0
+	while i < taille-1:
+		if liste[i] > liste[i+1]:
+			temp = liste[i]
+			liste[i] = liste[i+1]
+			liste[i+1] = temp
+			done = False
+		i += 1
+	taille -= 1
+
+print "Liste d'arrivee :",liste
